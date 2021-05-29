@@ -80,11 +80,11 @@ public class FragmentLangFrom extends Fragment {
             if(flagLang){
                 langFrom = "ru";
                 TextFrom = "Русский";
-                LanguageTTsFrom = Locale.ROOT;
+                LanguageTTsFrom = Locale.getDefault();
             } else {
                 langTo = "ru";
                 TextTo = "Русский";
-                LanguageTTsTo = Locale.ROOT;
+                LanguageTTsTo = Locale.getDefault();
             }
             FragmentManager fm = getActivity().getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
