@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentSettingApp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragmentSettingApp">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <ImageView
+        android:id="@+id/imgSett"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:src="@raw/sett"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVolume"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/drawable_rectangle"
+        android:gravity="center"
+        android:text="Громокость речи"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSett" />
+
+    <SeekBar
+        android:id="@+id/skbSpeed"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="370dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_register"
+        app:layout_constraintEnd_toEndOf="@+id/txtSpeed"
+        app:layout_constraintStart_toStartOf="@+id/txtSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/txtSpeed" />
+
+    <SeekBar
+        android:id="@+id/skbSound"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="370dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_register"
+        app:layout_constraintEnd_toEndOf="@+id/txtVolume"
+        app:layout_constraintStart_toStartOf="@+id/txtVolume"
+        app:layout_constraintTop_toBottomOf="@+id/txtVolume" />
+
+    <Button
+        android:id="@+id/btnUpSpeed"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_rectangle"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/skbSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/skbSpeed" />
+
+    <Button
+        android:id="@+id/btnDownSound"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_rectangle"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/skbSound"
+        app:layout_constraintTop_toBottomOf="@+id/skbSound" />
+
+    <Button
+        android:id="@+id/btnUpSound"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_rectangle"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/skbSound"
+        app:layout_constraintTop_toBottomOf="@+id/skbSound" />
+
+    <TextView
+        android:id="@+id/txtProgress1"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/drawable_register"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpSound"
+        app:layout_constraintStart_toEndOf="@+id/btnDownSound"
+        app:layout_constraintTop_toBottomOf="@+id/skbSound" />
+
+    <Button
+        android:id="@+id/btnDownSpeed"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_rectangle"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/skbSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/skbSpeed" />
+
+    <TextView
+        android:id="@+id/txtProgress2"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/drawable_register"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpSpeed"
+        app:layout_constraintStart_toEndOf="@+id/btnDownSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/skbSpeed" />
+
+    <TextView
+        android:id="@+id/txtSpeed"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/drawable_rectangle"
+        android:gravity="center"
+        android:text="Скорость речи"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVolume" />
+
+    <ImageView
+        android:id="@+id/btnBack4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:src="@raw/back100px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

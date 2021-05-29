@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".fragment.FragmentSignIn">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox.Dense"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_rectangle"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/email1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email1"
+        app:layout_constraintTop_toBottomOf="@+id/email1" />
+
+    <EditText
+        android:id="@+id/email1"
+        style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox.Dense"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/drawable_rectangle"
+        android:ems="10"
+        android:gravity="clip_vertical|left"
+        android:hint="Адрес почты"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/drawable_rectangle"
+        android:gravity="center"
+        android:text="Добро пожаловать"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/email1"
+        app:layout_constraintEnd_toEndOf="@+id/email1"
+        app:layout_constraintStart_toStartOf="@+id/email1" />
+
+    <Button
+        android:id="@+id/signUp"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_rectangle"
+        android:text="Регистрация"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/signIn"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_rectangle"
+        android:text="Вход"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgComplete1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@raw/complete100px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <FrameLayout
+        android:id="@+id/homeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="invisible">
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

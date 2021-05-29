@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragmentHome">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <EditText
+        android:id="@+id/translate"
+        style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox.Dense"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/drawable_rectangle"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="Введите текст..."
+        android:inputType="textMultiLine"
+        android:textColor="#212121"
+        android:textColorHint="#212121"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/translateItog"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/drawable_rectangle"
+        android:breakStrategy="high_quality"
+        android:freezesText="false"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:scrollbars="vertical"
+        android:textColor="#212121"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/translate" />
+
+    <ImageView
+        android:id="@+id/btnSetting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@raw/setting100px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnLangTo"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/drawable_rectangle"
+        android:text="Английский"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/translate"
+        app:layout_constraintEnd_toEndOf="@+id/translate" />
+
+    <Button
+        android:id="@+id/btnTranslate"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/drawable_rectangle"
+        android:text="Перевести"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/translateItog" />
+
+    <Button
+        android:id="@+id/btnLangFrom"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/drawable_rectangle"
+        android:text="Русский"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/translate"
+        app:layout_constraintStart_toStartOf="@+id/translate" />
+
+    <ImageView
+        android:id="@+id/btnSwap"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:src="@raw/arrow100px"
+        app:layout_constraintBottom_toTopOf="@+id/translate"
+        app:layout_constraintEnd_toStartOf="@+id/btnLangTo"
+        app:layout_constraintStart_toEndOf="@+id/btnLangFrom" />
+
+    <TextView
+        android:id="@+id/txtError"
+        android:layout_width="370dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTranslate" />
+
+    <ImageView
+        android:id="@+id/btnHis"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@raw/history100px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/btnSpeakLangFrom"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@raw/speak100px"
+        app:layout_constraintBottom_toBottomOf="@+id/translate"
+        app:layout_constraintEnd_toEndOf="@+id/translate"
+        app:layout_constraintTop_toTopOf="@+id/translate"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/btnSpeakLangTo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@raw/speak100px"
+        app:layout_constraintBottom_toBottomOf="@+id/translateItog"
+        app:layout_constraintEnd_toEndOf="@+id/translateItog"
+        app:layout_constraintTop_toTopOf="@+id/translateItog"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

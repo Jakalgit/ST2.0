@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "160974485301",
+    "firebase_url": "https://soundtranslator-xd-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "soundtranslator-xd",
+    "storage_bucket": "soundtranslator-xd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160974485301:android:73f7c88d7ccbe50a073e7c",
+        "android_client_info": {
+          "package_name": "com.example.soundtranslator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160974485301-9eiitusp7rmtk9lkv36iprhcj4igt7le.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT-ugkfODwJUYns04tEBNSfKfUS2nFXlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160974485301-9eiitusp7rmtk9lkv36iprhcj4igt7le.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
